@@ -2,6 +2,9 @@ from atproto import Client
 import json, logging, time, os
 from discord_webhook import DiscordEmbed, DiscordWebhook
 from datetime import datetime, timezone
+from dotenv import load_dotenv
+
+load_dotenv()  # take environment variables from .env.
 
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
@@ -63,10 +66,12 @@ def discord_embed(webhook_urls, display_name, handle, avatar, post_url, text, im
 
 def login_client():
     log.debug("Loading config.json")
+    USER = os.getenv("HANDLE") # Username/handle (e.g. test.bsky.social)
+    PASS = os.getenv("PASSWORD") # Password
     with open("config.json", "r") as config_file:
         config = json.load(config_file)
-        USER = config["handle"] # Username/handle (e.g. test.bsky.social)
-        PASS = config["password"] # Password
+        # USER = config["handle"] # Username/handle (e.g. test.bsky.social)
+        # PASS = config["password"] # Password
         XRPC = config["xrpc_url"] # XRPC URL (default is https://bsky.social - the URL to the ATprotocol PDS)
     log.debug(f"Attempting to log in to {USER} on {XRPC}")
     client = Client(base_url=XRPC)
