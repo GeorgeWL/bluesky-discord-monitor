@@ -1,10 +1,10 @@
 {
-    "xrpc_url": "https://bsky.social",
-    "handle": "your-bot-handle.bsky.social",
-    "password": "bot-password-here",
-    "search_range": 5,
-    "wait_time": 900,
-    "monitors": {
-        "did:plc:blahblahblahblah": ["https://discord-webhook-url-1","https://discord-webhook-url-2-and-beyond"]
-    }
+  "xrpc_url": "https://bsky.social",
+  "search_range": 5,
+  "wait_time": 2000,
+  "monitors": {
+    "did:plc:osbdpviqavwlj5cvu4du2aw4": [
+      "https://discord.com/api/webhooks/1324886061788303553/o6gM-Cpyu4mzsFMVDYmBTFQuHsdyDZ0IK1mxeKodbC8FwpYjfjgAHhGKWNZO0KKBP-xT"
+    ]
+  }
 }
