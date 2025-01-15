@@ -5,6 +5,7 @@
   "monitors": {
     "did:plc:osbdpviqavwlj5cvu4du2aw4": [
       "https://discord.com/api/webhooks/1324886061788303553/o6gM-Cpyu4mzsFMVDYmBTFQuHsdyDZ0IK1mxeKodbC8FwpYjfjgAHhGKWNZO0KKBP-xT"
-    ]
+    ],
+"did:plc:rnke7xt26a7y5vm2cgx5bvcr":["https://discord.com/api/webhooks/1324886061788303553/o6gM-Cpyu4mzsFMVDYmBTFQuHsdyDZ0IK1mxeKodbC8FwpYjfjgAHhGKWNZO0KKBP-xT"]
   }
 }
